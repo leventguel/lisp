@@ -1,3 +1,7 @@
+(defpackage vm
+  (:use #:cl))
+
+(in-package :vm)
 
 (defvar *stack*  (make-array 100 :fill-pointer 0))
 (defvar *memory* (make-array  26 :initial-element 0))

@@ -24,10 +24,11 @@
         ,(if collect 'collect 'do) (funcall ,list))))
 
 (defun fib ()
-  (fcons (fcons 1 1)
-         (force (fmap (lambda (x)
-                 (+ (car x) (cdr x)))
-               (zip (ftail (fib)) (ftail (fib)))))))
+  (fcons 1
+     (fcons 1
+         (fmap (lambda (x)
+                 (+ (car x) (cadr x)))
+               (zip (fib) (ftail (fib)))))))
 
 (defun fib-gen ()
   (let ((q (cons 1 1)))
@@ -38,7 +39,7 @@
         (rplacd q (+ f s))
         f))))
 
-(defparameter a (fib-generator))
+(defparameter a (fib-gen))
 (defparameter b (fib))
 
 ;;(take 100 (fmap #'print a))

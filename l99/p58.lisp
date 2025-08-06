@@ -16,16 +16,16 @@ P58 (**) Generate-and-test paradigm
     number is even? Write an appropriate predicate.
 "
 
-(load "/home/wbooze/lisp/l99/p54a")
-(load "/home/wbooze/lisp/l99/p55")
-(load "/home/wbooze/lisp/l99/p56")
-(load "/home/wbooze/lisp/l99/p57")
+(load "/home/inline/lisp/l99/p54a")
+(load "/home/inline/lisp/l99/p55")
+(load "/home/inline/lisp/l99/p56")
+(load "/home/inline/lisp/l99/p57")
 
-(load "/home/wbooze/lisp/l99/memoize")
+(load "/home/inline/lisp/l99/memoize")
 (use-package :org.tfeb.hax.memoize)
 (import 'alexandria:nconcf)
 
-(load "/home/wbooze/lisp/l99/draw-tree") ; to dump trees in nice ASCII-ART.
+(load "/home/inline/lisp/l99/draw-tree") ; to dump trees in nice ASCII-ART.
 
 
 

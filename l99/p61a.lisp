@@ -8,7 +8,7 @@ P61A (*) Collect the leaves of a binary tree in a list
 
 "
 
-(load "/home/wbooze/lisp/l99/p61")
+(load "/home/inline/lisp/l99/p61")
 
 
 ;; Simple recursive solution:

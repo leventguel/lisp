@@ -1,13 +1,13 @@
-(DEFUN POP-UP-WINDOW (LIFE-TIME &OPTIONAL (HOST ""))
-  (LET* ((DISPLAY (XLIB:OPEN-DISPLAY HOST))
-         (SCREEN (FIRST (XLIB:DISPLAY-ROOTS DISPLAY)))
-         (ROOT-WINDOW (XLIB:SCREEN-ROOT SCREEN))
-         (MY-WINDOW
-          (XLIB:CREATE-WINDOW :PARENT ROOT-WINDOW :X 0 :Y 0 :WIDTH 200 :HEIGHT
+(defun pop-up-window (life-time &optional (host ""))
+  (let* ((display (xlib:open-display host))
+         (screen (first (xlib:display-roots display)))
+         (root-window (xlib:screen-root screen))
+         (my-window
+          (xlib:create-window :parent root-window :x 0 :y 0 :width 200 :height
                               100)))
-    (XLIB:MAP-WINDOW MY-WINDOW)
-    (XLIB:DISPLAY-FINISH-OUTPUT DISPLAY)
-    (FORMAT T "should appear now~%")
-    (SLEEP LIFE-TIME)
-    (XLIB:DESTROY-WINDOW MY-WINDOW)
-    (XLIB:CLOSE-DISPLAY DISPLAY)))
+    (xlib:map-window my-window)
+    (xlib:display-finish-output display)
+    (format t "should appear now~%")
+    (sleep life-time)
+    (xlib:destroy-window my-window)
+    (xlib:close-display display)))

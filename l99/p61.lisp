@@ -7,10 +7,10 @@ P61 (*) Count the leaves of a binary tree
 
 "
 
-(load "/home/wbooze/lisp/l99/p54a")
-(load "/home/wbooze/lisp/l99/p55")
-(load "/home/wbooze/lisp/l99/p56")
-(load "/home/wbooze/lisp/l99/p57")
+(load "/home/inline/lisp/l99/p54a")
+(load "/home/inline/lisp/l99/p55")
+(load "/home/inline/lisp/l99/p56")
+(load "/home/inline/lisp/l99/p57")
 
 
 (defun binary-tree-leaf-p (node)

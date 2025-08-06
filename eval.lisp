@@ -1,4 +1,7 @@
 (eval-when (:compile-toplevel :load-toplevel :execute)
-  (declaim (optimize (safety 3) (debug 3) (space 0) (speed 0) (compilation-speed 0) (inhibit-warnings 0)))
+  (declaim (optimize (safety 3) (debug 3) (space 0) (speed 0) (compilation-speed 0) (sb-ext:inhibit-warnings 3)))
   (declaim (sb-ext:muffle-conditions sb-ext:compiler-note))
+  (declaim (sb-ext:muffle-conditions cl:warning))
+  (declaim (sb-ext:muffle-conditions sb-kernel:redefinition-warning))
+  (declaim (sb-ext:muffle-conditions cl:style-warning))
   (declaim (sb-ext:muffle-conditions sb-ext:code-deletion-note)))

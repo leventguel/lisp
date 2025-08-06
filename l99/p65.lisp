@@ -21,9 +21,7 @@ P65 (**) Layout a binary tree (2)
 ;; height of the tree = depth of node + height of node.
 
 
-(load "/home/wbooze/lisp/l99/p54a")
-
-
+(load "/home/inline/lisp/l99/p54a")
 
 (defun binary-tree-count-leftmosts (tree)
   (if (binary-tree-empty-p tree)

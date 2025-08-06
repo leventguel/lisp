@@ -29,7 +29,7 @@ P64 (**) Layout a binary tree (1)
     Test your predicate in an appropriate way.
 "
 
-(load "/home/wbooze/lisp/l99/p54a")
+(load "/home/inline/lisp/l99/p54a")
 
 
 ;; To add the coordinates, we create a new structure, which inherits

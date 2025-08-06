@@ -4,6 +4,9 @@
 	     :test #'string=)))
     (if x (cdr x) default)))
 
+#+sbcl
+(require 'sb-posix)
+
 (defvar symbols nil)
 
 (do-all-symbols (sym)
@@ -23,8 +26,6 @@
                                  (symbol-name sym))
                     symbols)))))
 
-
-
 (with-open-file (output #.(concatenate 'string
 			    #+sbcl (sb-posix:getenv "HOME")
 			    #+cmu  (getenv "HOME")
@@ -33,4 +34,3 @@
 		  :direction :output :if-exists :append
 		  :if-does-not-exist :create)
   (format output "~{~(~A~)~%~}" (sort symbols #'string<)))
-(quit))

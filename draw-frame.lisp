@@ -1,8 +1,9 @@
 (define-application-frame draw-frame ()
   ((lines :accessor lines :initform nil)
     (strings :accessor strings :initform nil))
-  (:panes (draw-pane (make-pane 'draw-pane :min-height 600 :min-width 1200))
-    (interactor :interactor :min-height 200 :min-width 1200))
+  (:panes 
+   (draw-pane (make-pane 'draw-pane :min-height 600 :min-width 1200))
+   (interactor :interactor :min-height 200 :min-width 1200))
   (:layouts (default-default (vertically ()
 			       draw-pane
 			       interactor)))

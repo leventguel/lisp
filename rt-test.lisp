@@ -16,11 +16,11 @@
 ;;; License: MIT
 
 
-#+nil  ;; to ease testing
+;; to ease testing
 (eval-when (:compile-toplevel :load-toplevel :execute)
-  (require :rt)
-  (require :mcclim)
-  (load "posix-tests"))
+  (cl-user::ql :rt)
+  (cl-user::ql :mcclim)
+  (load "/home/inline2/quicklisp/dists/quicklisp/software/rt-20101006-git/rt-test.lisp"))
 
 (cl:defpackage :rt-clim
   (:use :clim :clim-lisp :rt)

@@ -58,7 +58,7 @@
 (defmethod display-board ((frame tic-tac-toe) stream
 			   &key &allow-other-keys)
   (with-slots (board) frame
-    (multiple-value-bind (width height) (clim:window-inside-size stream)
+    (multiple-value-bind (width height) (clim:bounding-rectangle-size stream)
       (multiple-value-bind (size x-offset y-offset)
 	(if (< width height)
 	  (values (floor width 3) 0 (floor (- height width) 2))
@@ -286,7 +286,7 @@
 		((eql q t) (setq cats-game nil))))))
       (cond (x-win *X*)
 	(o-win *O*)
-	(cats-game nil)
+	(cats-game *empty*)
 	(t t)))))
 
 ;;; used when starting the program in the middle of a game

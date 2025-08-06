@@ -77,7 +77,7 @@ P47 (*) Truth tables for logical expressions (2).
 
 ;; For this, we use a simple recursive-descend parser generator:
 
-(load "/home/wbooze/lisp/l99/rdp.lisp")
+(load "/home/inline/lisp/l99/rdp.lisp")
 (use-package :com.informatimago.rdp)
 
 

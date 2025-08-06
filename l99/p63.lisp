@@ -28,7 +28,7 @@ P63 (**) Construct a complete binary tree
     Test your predicate in an appropriate way.
 
 "
-(load "/home/wbooze/lisp/l99/p54a")
+(load "/home/inline/lisp/l99/p54a")
 
 (defun complete-binary-tree-upto (a n)
   (make-binary-tree :label a

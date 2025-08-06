@@ -9,7 +9,6 @@
     :duplicate-key #'car)
   (force-output win))
 
-
 (defun test-graph (tree &key (p nil) (win *standard-output*) (dup nil) (fun #'car) (ori :horizontal) (type nil))
   (if p
       (window-clear win))

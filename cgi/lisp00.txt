@@ -1,0 +1,24 @@
+#! /home/inline/sbcl-current/bin/sbcl
+;;; -*- Mode: Lisp -*-
+;;;
+;;; $Header: /home/gene/library/website/docsrc/lc/RCS/lisp00.txt,v 395.1 2008/04/20 17:25:45 gene Exp $
+;;;
+;;; A simple CGI program in Lisp.
+;;;
+
+(format t "Content-type: text/html~%")
+(format t "~%")
+(format t "<html>~%")
+(format t "<head>~%")
+(format t "<title>why do I like &quot;titular&quot;</title>~%")
+(format t "</head>~%")
+(format t "<body~%>")
+(format t "<p>What is it?~%")
+(format t "It's a simple CGI program~%")
+(format t "in Lisp~</p>~%")
+(format t "</body>~%")
+(format t "</html>~%")
+
+(ignore-errors (quit))
+(ignore-errors (exit))
+;;; --- end of file ---

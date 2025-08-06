@@ -23,7 +23,7 @@ P67 (**) A string representation of binary trees
    
 "
 
-(load "/home/wbooze/lisp/l99/rdp")
+(load "/home/inline/lisp/l99/rdp")
 (use-package "COM.INFORMATIMAGO.RDP")
 
 

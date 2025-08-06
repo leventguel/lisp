@@ -2,7 +2,7 @@
 
 (in-package :demo)
 
-(defvar *a-mutex* (make-mutex :name "my lock"))
+(defvar *a-mutex* (make-mutex :name "my_lock"))
 
 (defun thread-fn ()
   (format t "Thread ~A running ~%" *current-thread*)
